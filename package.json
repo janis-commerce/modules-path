@@ -1,7 +1,7 @@
 {
-  "name": "modules-path",
+  "name": "@janiscommerce/modules-path",
   "version": "1.0.0",
-  "description": "",
+  "description": "The `modules-path` module allows to include modules recursively",
   "main": "index.js",
   "scripts": {
     "test": "export TEST_ENV=true; mocha --exit -R nyan --recursive tests/",
@@ -29,5 +29,8 @@
     "mock-fs": "^4.9.0",
     "nyc": "^14.1.0",
     "sinon": "^7.3.2"
+  },
+  "directories": {
+    "test": "tests"
   }
 }
