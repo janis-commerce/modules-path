@@ -1,13 +1,11 @@
 # modules-path
 
-The `modules-path` module allows to include modules recursively
+The `modules-path` module allows to include modules recursively.
 
-## Install
-
-Using `npm`:
+## Installation
 
 ```
-npm install
+npm install @janiscommerce/modules-path
 ```
 
 ## Example
