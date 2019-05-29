@@ -76,4 +76,11 @@ describe('ModulesPath', function() {
 		sandbox.assert.calledOnce(spy);
 	});
 
+	it('should return \'false\' when fs rejects with unknown folder', function() {
+
+		const resFoo = ModulesPath.get('unknown-folder', 'foo');
+
+		assert(!resFoo);
+	});
+
 });

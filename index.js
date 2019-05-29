@@ -41,10 +41,7 @@ class ModulesPath {
 
 			if(fs.statSync(dirItemFullPath).isDirectory()) {
 				const childrenFilesPaths = this.getFiles(path.join(folder, dirItem));
-
-				if(childrenFilesPaths)
-					filesPaths = { ...filesPaths, ...childrenFilesPaths };
-
+				filesPaths = { ...filesPaths, ...childrenFilesPaths };
 			} else {
 				const { name, dir } = path.parse(dirItemFullPath);
 				filesPaths[name] = path.join(dir, name);
